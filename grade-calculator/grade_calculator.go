@@ -6,6 +6,16 @@ type GradeCalculator struct {
 	essays      []Grade
 }
 
+type LetterGrade string
+
+const (
+	A LetterGrade = "A"
+	B LetterGrade = "B"
+	C LetterGrade = "C"
+	D LetterGrade = "D"
+	F LetterGrade = "F"
+)
+
 type GradeType int
 
 const (
@@ -38,20 +48,20 @@ func NewGradeCalculator() *GradeCalculator {
 	}
 }
 
-func (gc *GradeCalculator) GetFinalGrade() string {
+func (gc *GradeCalculator) GetFinalGrade() LetterGrade {
 	numericalGrade := gc.calculateNumericalGrade()
 
 	if numericalGrade >= 90 {
-		return "A"
+		return A
 	} else if numericalGrade >= 80 {
-		return "B"
+		return B
 	} else if numericalGrade >= 70 {
-		return "C"
+		return C
 	} else if numericalGrade >= 60 {
-		return "D"
+		return D
 	}
 
-	return "F"
+	return F
 }
 
 func (gc *GradeCalculator) AddGrade(name string, grade int, gradeType GradeType) {
