@@ -66,7 +66,7 @@ func TestWeights(t *testing.T) {
 }
 
 func TestLowA(t *testing.T) {
-	expected_value := "A"
+	expected_value := A
 
 	gradeCalculator := NewGradeCalculator()
 
@@ -82,7 +82,7 @@ func TestLowA(t *testing.T) {
 }
 
 func TestHighB(t *testing.T) {
-	expected_value := "B"
+	expected_value := B
 
 	gradeCalculator := NewGradeCalculator()
 
@@ -97,7 +97,7 @@ func TestHighB(t *testing.T) {
 	}
 }
 func TestLowB(t *testing.T) {
-	expected_value := "B"
+	expected_value := B
 
 	gradeCalculator := NewGradeCalculator()
 
@@ -113,7 +113,7 @@ func TestLowB(t *testing.T) {
 }
 
 func TestHighC(t *testing.T) {
-	expected_value := "C"
+	expected_value := C
 
 	gradeCalculator := NewGradeCalculator()
 
@@ -129,7 +129,7 @@ func TestHighC(t *testing.T) {
 }
 
 func TestLowC(t *testing.T) {
-	expected_value := "C"
+	expected_value := C
 
 	gradeCalculator := NewGradeCalculator()
 
@@ -145,7 +145,7 @@ func TestLowC(t *testing.T) {
 }
 
 func TestHighD(t *testing.T) {
-	expected_value := "D"
+	expected_value := D
 
 	gradeCalculator := NewGradeCalculator()
 
@@ -161,7 +161,7 @@ func TestHighD(t *testing.T) {
 }
 
 func TestLowD(t *testing.T) {
-	expected_value := "D"
+	expected_value := D
 
 	gradeCalculator := NewGradeCalculator()
 
@@ -177,7 +177,7 @@ func TestLowD(t *testing.T) {
 }
 
 func TestHighF(t *testing.T) {
-	expected_value := "F"
+	expected_value := F
 
 	gradeCalculator := NewGradeCalculator()
 
@@ -193,7 +193,7 @@ func TestHighF(t *testing.T) {
 }
 
 func TestWeight(t *testing.T) {
-	expected_value := "F"
+	expected_value := F
 
 	gradeCalculator := NewGradeCalculator()
 
